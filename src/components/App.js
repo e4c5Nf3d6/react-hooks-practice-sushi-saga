@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="app">
-      <SushiContainer sushis={sushis} onEatSushi={eatSushi} moneyLeft={moneyLeft} />
-      <Table plates={plates} moneyLeft={moneyLeft} />
+      <SushiContainer sushis={sushis} onEatSushi={eatSushi} moneyLeft={moneyLeft} plates={plates} />
+      <Table plates={plates} moneyLeft={moneyLeft} onSetMoneyLeft={setMoneyLeft} />
     </div>
   );
 }

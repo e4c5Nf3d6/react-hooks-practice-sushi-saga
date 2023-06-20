@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
-function Sushi({ sushi, onEatSushi, moneyLeft }) {
-  const [isEaten, setIsEaten] = useState(false)
+function Sushi({ sushi, onEatSushi, moneyLeft, plates }) {
+  const [isEaten, setIsEaten] = useState(plates.includes(sushi))
 
   function handleEatSushi() {
     if (sushi.price <= moneyLeft) {
